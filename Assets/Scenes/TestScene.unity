@@ -282,6 +282,7 @@ GameObject:
   - component: {fileID: 151980367}
   - component: {fileID: 151980362}
   - component: {fileID: 151980361}
+  - component: {fileID: 151980368}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -411,6 +412,51 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &151980368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151980360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72911177b9ac7aa4a9018410755bf7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCollisionEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 151980364}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: cfc17be85c2977a44878c533622efbd4, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onCollisionStayEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  onCollisionExitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 151980364}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2100000, guid: 31378272199485341959804284ef8042, type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &551837891
 PrefabInstance:
   m_ObjectHideFlags: 0
