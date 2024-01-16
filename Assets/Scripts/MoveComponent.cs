@@ -1,36 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.UIElements;
 using UnityEngine;
 
 public class MoveComponent : MonoBehaviour
 {
     public float speed;
-    public Transform pointStart;
-    public Transform pointFinal;
-    
-    private bool moveFirsPoint = true;
-    
+    public Transform[] points;
+
+    private int movePoint = 0;
+
     private void Update()
     {
-        if (moveFirsPoint)
-        {
-            Vector3 moveDirection = pointStart.position - transform.position;
-            transform.position = transform.position + moveDirection.normalized * (Time.deltaTime * speed);
+        Vector3 moveDirection = points[movePoint].position - transform.position;
+        transform.position = transform.position + moveDirection.normalized * (Time.deltaTime * speed);
 
-            if (moveDirection.magnitude < 0.1f)
-            {
-                moveFirsPoint = false;
-            }
-        }
-        else
+        if (moveDirection.magnitude < 0.1f)
         {
-            Vector3 moveDirection = pointFinal.position - transform.position;
-            transform.position = transform.position + moveDirection.normalized * (Time.deltaTime * speed);
+            movePoint = movePoint + 1;
 
-            if (moveDirection.magnitude < 0.1f)
+            if (movePoint >= points.Length)
             {
-                moveFirsPoint = true;
+                movePoint = 0;
             }
         }
     }
