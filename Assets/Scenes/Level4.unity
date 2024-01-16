@@ -320,6 +320,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 753ea9ccf9eee6c42a0954ec8663b992, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ff44dbfc291c13741b38fddd0b50f4a2, type: 2}
     - target: {fileID: 11400000, guid: 753ea9ccf9eee6c42a0954ec8663b992, type: 3}
       propertyPath: m_JumpPower
       value: 2
@@ -876,7 +880,7 @@ PrefabInstance:
     - target: {fileID: 4863792401366420675, guid: 32e9dec05450d7d44b85278581897e8a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 31378272199485341959804284ef8042, type: 2}
+      objectReference: {fileID: 2100000, guid: e5f50359f7f5e3e49878143ea80d15c0, type: 2}
     - target: {fileID: 4863792401366420677, guid: 32e9dec05450d7d44b85278581897e8a, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -943,6 +947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4863792401366420675, guid: 32e9dec05450d7d44b85278581897e8a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5d69df9d9d11e49d110086ba44295342, type: 2}
     - target: {fileID: 4863792401366420677, guid: 32e9dec05450d7d44b85278581897e8a, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1851,6 +1859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform
       objectReference: {fileID: 0}
+    - target: {fileID: 4863792401366420675, guid: 32e9dec05450d7d44b85278581897e8a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5d69df9d9d11e49d110086ba44295342, type: 2}
     - target: {fileID: 4863792401366420677, guid: 32e9dec05450d7d44b85278581897e8a, type: 3}
       propertyPath: m_RootOrder
       value: 4
